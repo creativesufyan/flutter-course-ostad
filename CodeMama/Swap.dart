@@ -1,0 +1,13 @@
+import 'dart:io';
+
+void main() {
+  List<int > input= stdin.readLineSync()!.split(' ').map(int.parse).toList();
+  int n1 = input[0];
+  int n2 = input[1];
+
+  print("Before swapping: num1 = $n1, num2 = $n2");
+  int temp = n1;
+  n1=n2;
+  n2=temp;
+  print("After swapping: num1 = $n1, num2 = $n2");
+}
